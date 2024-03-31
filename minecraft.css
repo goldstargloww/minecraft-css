@@ -1,0 +1,262 @@
+@font-face {
+  font-family: 'minecraft';
+  src: url("fonts/minecraft.ttf");
+}
+@font-face {
+  font-family: 'minecraft';
+  src: url("fonts/minecraft bold.ttf");
+  font-weight: bold;
+}
+
+.center, .center * {text-align: center;}
+.right, .right * {text-align: right;}
+.left, .left * {text-align: left;}
+
+
+:root {
+  --mc-text-pixel-size: 0.125em; /* default 0.125em */
+  --mc-chat-width: 40em; /* default 40em */
+  --mc-chat-background: #0008; /* default #0008 */ 
+
+  /* %% minecraft colors %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+  /* more info/explanation at https://minecraft.wiki/w/Formatting_codes#Color_codes */
+  --mc-color-darkest: 0; /* default 0 */ 
+  --mc-color-dark: 85; /* default 85 */ 
+  --mc-color-light: 170; /* default 170 */ 
+  --mc-color-lightest: 255; /* default 255 */ 
+
+
+  /* base colors */
+  --mc-black: rgb(var(--mc-color-darkest), var(--mc-color-darkest), var(--mc-color-darkest));
+  --mc-dark_blue: rgb(var(--mc-color-darkest), var(--mc-color-darkest), var(--mc-color-light));
+  --mc-dark_green: rgb(var(--mc-color-darkest), var(--mc-color-light), var(--mc-color-darkest));
+  --mc-dark_aqua: rgb(var(--mc-color-darkest), var(--mc-color-light), var(--mc-color-light));
+  --mc-dark_red: rgb(var(--mc-color-light), var(--mc-color-darkest), var(--mc-color-darkest));
+  --mc-dark_purple: rgb(var(--mc-color-light), var(--mc-color-darkest), var(--mc-color-light));
+  --mc-gold: rgb(var(--mc-color-lightest), var(--mc-color-light), var(--mc-color-darkest));
+  --mc-gray: rgb(var(--mc-color-light), var(--mc-color-light), var(--mc-color-light));
+  --mc-dark_gray: rgb(var(--mc-color-dark), var(--mc-color-dark), var(--mc-color-dark));
+  --mc-blue: rgb(var(--mc-color-dark), var(--mc-color-dark), var(--mc-color-lightest));
+  --mc-green: rgb(var(--mc-color-dark), var(--mc-color-lightest), var(--mc-color-dark));
+  --mc-aqua: rgb(var(--mc-color-dark), var(--mc-color-lightest), var(--mc-color-lightest));
+  --mc-red: rgb(var(--mc-color-lightest), var(--mc-color-dark), var(--mc-color-dark));
+  --mc-light_purple: rgb(var(--mc-color-lightest), var(--mc-color-dark), var(--mc-color-lightest));
+  --mc-yellow: rgb(var(--mc-color-lightest), var(--mc-color-lightest), var(--mc-color-dark));
+  --mc-white: rgb(var(--mc-color-lightest), var(--mc-color-lightest), var(--mc-color-lightest));
+
+  /* shadow colors */
+  --mc-black-shadow: rgb(calc(var(--mc-color-darkest)/4), calc(var(--mc-color-darkest)/4), calc(var(--mc-color-darkest)/4));
+  --mc-dark_blue-shadow: rgb(calc(var(--mc-color-darkest)/4), calc(var(--mc-color-darkest)/4), calc(var(--mc-color-light)/4));
+  --mc-dark_green-shadow: rgb(calc(var(--mc-color-darkest)/4), calc(var(--mc-color-light)/4), calc(var(--mc-color-darkest)/4));
+  --mc-dark_aqua-shadow: rgb(calc(var(--mc-color-darkest)/4), calc(var(--mc-color-light)/4), calc(var(--mc-color-light)/4));
+  --mc-dark_red-shadow: rgb(calc(var(--mc-color-light)/4), calc(var(--mc-color-darkest)/4), calc(var(--mc-color-darkest)/4));
+  --mc-dark_purple-shadow: rgb(calc(var(--mc-color-light)/4), calc(var(--mc-color-darkest)/4), calc(var(--mc-color-light)/4));
+  --mc-gold-shadow: rgb(calc(var(--mc-color-lightest)/4), calc(var(--mc-color-light)/4), calc(var(--mc-color-darkest)/4));
+  --mc-gray-shadow: rgb(calc(var(--mc-color-light)/4), calc(var(--mc-color-light)/4), calc(var(--mc-color-light)/4));
+  --mc-dark_gray-shadow: rgb(calc(var(--mc-color-dark)/4), calc(var(--mc-color-dark)/4), calc(var(--mc-color-dark)/4));
+  --mc-blue-shadow: rgb(calc(var(--mc-color-dark)/4), calc(var(--mc-color-dark)/4), calc(var(--mc-color-lightest)/4));
+  --mc-green-shadow: rgb(calc(var(--mc-color-dark)/4), calc(var(--mc-color-lightest)/4), calc(var(--mc-color-dark)/4));
+  --mc-aqua-shadow: rgb(calc(var(--mc-color-dark)/4), calc(var(--mc-color-lightest)/4), calc(var(--mc-color-lightest)/4));
+  --mc-red-shadow: rgb(calc(var(--mc-color-lightest)/4), calc(var(--mc-color-dark)/4), calc(var(--mc-color-dark)/4));
+  --mc-light_purple-shadow: rgb(calc(var(--mc-color-lightest)/4), calc(var(--mc-color-dark)/4), calc(var(--mc-color-lightest)/4));
+  --mc-yellow-shadow: rgb(calc(var(--mc-color-lightest)/4), calc(var(--mc-color-lightest)/4), calc(var(--mc-color-dark)/4));
+  --mc-white-shadow: rgb(calc(var(--mc-color-lightest)/4), calc(var(--mc-color-lightest)/4), calc(var(--mc-color-lightest)/4));
+}
+
+
+
+
+
+/* %% formatting %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.mc-font, .mc-font * {
+  font-family: 'minecraft';
+  word-spacing: var(--mc-text-pixel-size); /* adds an extra pixel to the space because it's one too thin */
+}
+
+s.mc-font, .mc-font s {
+  text-decoration-thickness: var(--mc-text-pixel-size);
+}
+
+u.mc-font, .mc-font u {
+  text-decoration-thickness: var(--mc-text-pixel-size);
+  text-decoration-skip-ink: none;
+  text-underline-position: under;
+}
+
+
+
+
+
+/* %% text color %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.mc-black {color: var(--mc-black)}
+.mc-dark_blue {color: var(--mc-dark_blue)}
+.mc-dark_green {color: var(--mc-dark_green)}
+.mc-dark_aqua {color: var(--mc-dark_aqua)}
+.mc-dark_red {color: var(--mc-dark_red)}
+.mc-dark_purple {color: var(--mc-dark_purple)}
+.mc-gold {color: var(--mc-gold)}
+.mc-gray {color: var(--mc-gray)}
+.mc-dark_gray {color: var(--mc-dark_gray)}
+.mc-blue {color: var(--mc-blue)}
+.mc-green {color: var(--mc-green)}
+.mc-aqua {color: var(--mc-aqua)}
+.mc-red {color: var(--mc-red)}
+.mc-light_purple {color: var(--mc-light_purple)}
+.mc-yellow {color: var(--mc-yellow)}
+.mc-white {color: var(--mc-white)}
+
+
+
+
+
+/* %% shadows %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.mc-white.mc-shadow, 
+.mc-white .mc-shadow, 
+.mc-shadow .mc-white {
+  color: var(--mc-white); 
+  text-shadow: var(--mc-text-pixel-size) var(--mc-text-pixel-size) var(--mc-white-shadow);
+}
+.mc-yellow.mc-shadow, 
+.mc-yellow .mc-shadow, 
+.mc-shadow .mc-yellow {
+  color: var(--mc-yellow); 
+  text-shadow: var(--mc-text-pixel-size) var(--mc-text-pixel-size) var(--mc-yellow-shadow);
+}
+.mc-light_purple.mc-shadow, 
+.mc-light_purple .mc-shadow, 
+.mc-shadow .mc-light_purple {
+  color: var(--mc-light_purple); 
+  text-shadow: var(--mc-text-pixel-size) var(--mc-text-pixel-size) var(--mc-light_purple-shadow);
+}
+.mc-red.mc-shadow, 
+.mc-red .mc-shadow, 
+.mc-shadow .mc-red {
+  color: var(--mc-red); 
+  text-shadow: var(--mc-text-pixel-size) var(--mc-text-pixel-size) var(--mc-red-shadow);
+}
+.mc-aqua.mc-shadow, 
+.mc-aqua .mc-shadow, 
+.mc-shadow .mc-aqua {
+  color: var(--mc-aqua); 
+  text-shadow: var(--mc-text-pixel-size) var(--mc-text-pixel-size) var(--mc-aqua-shadow);
+}
+.mc-green.mc-shadow, 
+.mc-green .mc-shadow, 
+.mc-shadow .mc-green {
+  color: var(--mc-green); 
+  text-shadow: var(--mc-text-pixel-size) var(--mc-text-pixel-size) var(--mc-green-shadow);
+}
+.mc-blue.mc-shadow, 
+.mc-blue .mc-shadow, 
+.mc-shadow .mc-blue {
+  color: var(--mc-blue); 
+  text-shadow: var(--mc-text-pixel-size) var(--mc-text-pixel-size) var(--mc-blue-shadow);
+}
+.mc-dark_gray.mc-shadow, 
+.mc-dark_gray .mc-shadow, 
+.mc-shadow .mc-dark_gray {
+  color: var(--mc-dark_gray); 
+  text-shadow: var(--mc-text-pixel-size) var(--mc-text-pixel-size) var(--mc-dark_gray-shadow);
+}
+.mc-gray.mc-shadow, 
+.mc-gray .mc-shadow, 
+.mc-shadow .mc-gray {
+  color: var(--mc-gray); 
+  text-shadow: var(--mc-text-pixel-size) var(--mc-text-pixel-size) var(--mc-gray-shadow);
+}
+.mc-gold.mc-shadow, 
+.mc-gold .mc-shadow, 
+.mc-shadow .mc-gold {
+  color: var(--mc-gold); 
+  text-shadow: var(--mc-text-pixel-size) var(--mc-text-pixel-size) var(--mc-gold-shadow);
+}
+.mc-dark_purple.mc-shadow, 
+.mc-dark_purple .mc-shadow, 
+.mc-shadow .mc-dark_purple {
+  color: var(--mc-dark_purple); 
+  text-shadow: var(--mc-text-pixel-size) var(--mc-text-pixel-size) var(--mc-dark_purple-shadow);
+}
+.mc-dark_red.mc-shadow, 
+.mc-dark_red .mc-shadow, 
+.mc-shadow .mc-dark_red {
+  color: var(--mc-dark_red); 
+  text-shadow: var(--mc-text-pixel-size) var(--mc-text-pixel-size) var(--mc-dark_red-shadow);
+}
+.mc-dark_aqua.mc-shadow, 
+.mc-dark_aqua .mc-shadow, 
+.mc-shadow .mc-dark_aqua {
+  color: var(--mc-dark_aqua); 
+  text-shadow: var(--mc-text-pixel-size) var(--mc-text-pixel-size) var(--mc-dark_aqua-shadow);
+}
+.mc-dark_green.mc-shadow, 
+.mc-dark_green .mc-shadow, 
+.mc-shadow .mc-dark_green {
+  color: var(--mc-dark_green); 
+  text-shadow: var(--mc-text-pixel-size) var(--mc-text-pixel-size) var(--mc-dark_green-shadow);}
+.mc-dark_blue.mc-shadow, 
+.mc-dark_blue .mc-shadow, 
+.mc-shadow .mc-dark_blue {
+  color: var(--mc-dark_blue); 
+  text-shadow: var(--mc-text-pixel-size) var(--mc-text-pixel-size) var(--mc-dark_blue-shadow);
+}
+.mc-black.mc-shadow, 
+.mc-black .mc-shadow, 
+.mc-shadow .mc-black {
+  color: var(--mc-black); 
+  text-shadow: var(--mc-text-pixel-size) var(--mc-text-pixel-size) var(--mc-black-shadow);
+}
+
+
+
+
+
+/* %% gui %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.mc-title {
+  font-size: 4em; /* twice the size of subtitles, quadrice the size of chat and ui */
+  word-wrap: break-word;
+  margin: calc( var(--mc-text-pixel-size) * 2);
+}
+.mc-subtitle {
+  font-size: 2em; /* twice the size of chat and ui */
+  word-wrap: break-word;
+}
+
+
+
+
+
+/* %% chat %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+.chat {
+  background-color: var(--mc-chat-background);
+  padding: 0.25em 0.25em 0.25em 1em;
+}
+
+.chatbox {
+  background-color: var(--mc-chat-background);
+  padding: 0 1em;
+  width: var(--mc-chat-width);
+}
+
+ul.chatlist {
+  list-style-type: none;
+  padding: 0;
+}
+ul.chatlist > li {
+  background-color: var(--mc-chat-background);
+  padding: 0 1em;
+  width: var(--mc-chat-width);
+}
+ul.chatlist > li.fade75 {
+  opacity: 0.75;
+}
+ul.chatlist > li.fade50 {
+  opacity: 0.5;
+}
+ul.chatlist > li.fade25 {
+  opacity: 0.25;
+}
