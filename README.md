@@ -6,7 +6,7 @@ i recreated the minecraft seven font (for the most part, there's *definitely* a 
 
 you can see how it looks [here](https://goldstargloww.github.io/minecraft-css/)!
 
-feel free to use this! i made it because nobody had already. just grab the `minecraft.css` file and you're all set :>
+feel free to use this! i made it because nobody had already. just grab the `minecraft.css` file as well as the fonts and you're all set :>
 
 ## what's going on with the colors?
 
