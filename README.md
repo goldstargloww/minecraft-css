@@ -22,19 +22,19 @@ because that's how minecraft does it
 
 | name | color | hex
 | -- | -- | --
-| black | <img src="https://color.petalss.me/000000.png" width="32"> | #000
-| dark_blue | <img src="https://color.petalss.me/0000AA.png" width="32"> | #00A
-| dark_green | <img src="https://color.petalss.me/00AA00.png" width="32"> | #0A0
-| dark_aqua | <img src="https://color.petalss.me/00AAAA.png" width="32"> | #0AA
-| dark_red | <img src="https://color.petalss.me/AA0000.png" width="32"> | #A00
-| dark_purple | <img src="https://color.petalss.me/AA00AA.png" width="32"> | #A0A
-| gold | <img src="https://color.petalss.me/FFAA00.png" width="32"> | #FA0
-| gray | <img src="https://color.petalss.me/AAAAAA.png" width="32"> | #AAA
-| dark_gray | <img src="https://color.petalss.me/555555.png" width="32"> | #555
-| blue | <img src="https://color.petalss.me/5555FF.png" width="32"> | #55F
-| green | <img src="https://color.petalss.me/55FF55.png" width="32"> | #5F5
-| aqua | <img src="https://color.petalss.me/55FFFF.png" width="32"> | #5FF
-| red | <img src="https://color.petalss.me/FF5555.png" width="32"> | #F55
-| light_purple | <img src="https://color.petalss.me/FF55FF.png" width="32"> | #F5F
-| yellow | <img src="https://color.petalss.me/FFFF55.png" width="32"> | #FF5
-| white | <img src="https://color.petalss.me/FFFFFF.png" width="32"> | #FFF
+| black | <img src="https://sheep.greysdawn.com/color/000000?text=%20" width="32"> | #000
+| dark_blue | <img src="https://sheep.greysdawn.com/color/0000aa?text=%20" width="32"> | #00A
+| dark_green | <img src="https://sheep.greysdawn.com/color/00aa00?text=%20" width="32"> | #0A0
+| dark_aqua | <img src="https://sheep.greysdawn.com/color/00aaaa?text=%20" width="32"> | #0AA
+| dark_red | <img src="https://sheep.greysdawn.com/color/aa0000?text=%20" width="32"> | #A00
+| dark_purple | <img src="https://sheep.greysdawn.com/color/aa00aa?text=%20" width="32"> | #A0A
+| gold | <img src="https://sheep.greysdawn.com/color/ffaa00?text=%20" width="32"> | #FA0
+| gray | <img src="https://sheep.greysdawn.com/color/aaaaaa?text=%20" width="32"> | #AAA
+| dark_gray | <img src="https://sheep.greysdawn.com/color/555555?text=%20" width="32"> | #555
+| blue | <img src="https://sheep.greysdawn.com/color/5555ff?text=%20" width="32"> | #55F
+| green | <img src="https://sheep.greysdawn.com/color/55ff55?text=%20" width="32"> | #5F5
+| aqua | <img src="https://sheep.greysdawn.com/color/55ffff?text=%20" width="32"> | #5FF
+| red | <img src="https://sheep.greysdawn.com/color/ff5555?text=%20" width="32"> | #F55
+| light_purple | <img src="https://sheep.greysdawn.com/color/ff55ff?text=%20" width="32"> | #F5F
+| yellow | <img src="https://sheep.greysdawn.com/color/ffff55?text=%20" width="32"> | #FF5
+| white | <img src="https://sheep.greysdawn.com/color/ffffff?text=%20" width="32"> | #FFF
