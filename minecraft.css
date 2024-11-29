@@ -16,11 +16,6 @@
   font-weight: bold;
 }
 
-.center, .center * {text-align: center;}
-.right, .right * {text-align: right;}
-.left, .left * {text-align: left;}
-
-
 :root {
   --mc-text-pixel-size: 0.125em; /* default 0.125em */
   --mc-chat-width: 40em; /* default 40em */
@@ -226,7 +221,7 @@ u.mc-font, .mc-font u {
 .mc-title {
   font-size: 4em; /* twice the size of subtitles, quadrice the size of chat and ui */
   word-wrap: break-word;
-  margin: calc( var(--mc-text-pixel-size) * 2);
+  margin: calc(var(--mc-text-pixel-size) * 2);
 }
 .mc-subtitle {
   font-size: 2em; /* twice the size of chat and ui */
